@@ -1,0 +1,38 @@
+.card {
+  width: 12rem;
+  height: fit-content;
+  margin: 1rem;
+  color: black;
+}
+.card:hover {
+  transition: 200ms ease-in;
+  transform: scale(1.02);
+}
+.cardImage {
+  border: 0.2rem solid black;
+
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 10px black;
+  object-fit: fill;
+  width: 100%;
+  height: 20rem;
+}
+.cardDetails {
+  height: auto;
+  margin: 0.1rem;
+  font-size: 1em;
+}
+.cardDetails.name {
+  height: fit-content;
+  width: fit-content;
+}
+.cardDetails.date {
+  text-align: start;
+  height: fit-content;
+  width: 85%;
+}
+.cardDetails.score {
+  height: fit-content;
+  border: none;
+  position: relative;
+}

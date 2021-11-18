@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.App.header {
+  background-color: #a8dadc;
+  width: 100%;
+  height: 5rem;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App.header-logo {
+  position: absolute;
+  margin-left: 10px;
+  width: 250px;
+  height: 3rem;
+  left: 5%;
+  top: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App.header-menu {
+  position: absolute;
+  width: 25rem;
+  height: 3rem;
+  padding: 10px;
+  right: 5%;
+  top: 1rem;
+}
+.App.header-menu-button {
+  font-size: x-large;
+  background-color: transparent;
+  margin-left: 1rem;
+  border: 0.15rem solid black;
+  border-radius: 0.4rem;
+  box-shadow: 0 1px 10px black;
+  color: black;
+  text-decoration: none;
+}
+.App.header-menu-button:hover {
+  cursor: pointer;
+  background-color: #5bc4bb;
+}
+.App.content {
+  margin-top: 4rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App.content-jumbotron {
+  padding: 2rem;
+  background-color: #457b9d;
   color: white;
+  font-size: xx-large;
+  text-align: start;
+  height: 10rem;
 }
-
-.App-link {
-  color: #61dafb;
+.App.content-movies {
+  width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  text-decoration: none;
+}
+.App.footer {
+  padding: 1rem;
+  margin: auto;
+  height: 10rem;
+  background-color: #1d3557;
+}
+.App.footer.logo {
+  width: 130px;
+  height: 94px;
+}
+.moviePages{
+  text-align: end;
+  display: block;
+  padding-left: 1rem;
 }
