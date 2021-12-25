@@ -40,7 +40,7 @@ export default class home extends Component {
                         </select>
                     </div>
                     <div className="moviePages">
-                        <button onClick={() => { this.setPage(this.state.page == 1 ? this.state.totalPages : this.state.page - 1) }} >{this.state.page == 1 ? this.state.totalPages : this.state.page - 1}</button>
+                        <button onClick={() => { this.setPage(this.state.page == 1 ? this.state.totalPages : this.state.page - 1) }} >{"<<< Previous Page"}</button>
                         <select onChange={(event) => this.setPage(event.target)}>
                             {
                                 this.state.pagePicker.map(item => {
@@ -48,7 +48,7 @@ export default class home extends Component {
                                 })
                             }
                         </select>
-                        <button onClick={() => { this.setPage(this.state.page % this.state.totalPages + 1) }} >{this.state.page % this.state.totalPages + 1}</button>
+                        <button onClick={() => { this.setPage(this.state.page % this.state.totalPages + 1) }} >{"Next Page >>>"}</button>
                     </div>
                     <div style={{ overflow: "auto" }}>
                         <div className="row">
